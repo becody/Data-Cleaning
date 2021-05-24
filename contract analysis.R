@@ -1,4 +1,10 @@
-################# Look at contract data #################
+################ Contract Analysis #######################
+# Date: 10/21/2020
+# Goal: perform one time data cleaning and analysis for contract data
+# Author: Brittany Cody
+# Contact: brittany.cody@learnplatform.com
+
+# Install packages
 install.packages("arsenal")
 install.packages("tidyr")
 install.packages("readr")
@@ -9,11 +15,11 @@ library(stringr)
 library(readr)
 library(tidyr)
 
-# Read in csv!
-contract <- read.csv("C:\\Users\\17046\\OneDrive\\Documents\\LearnPlatform\\Analysis\\Data\\organization_tools_contract.csv")
-line_items <- read.csv("C:\\Users\\17046\\OneDrive\\Documents\\LearnPlatform\\Analysis\\Data\\line_items.csv")
-org_id <- read.csv("C:\\Users\\17046\\OneDrive\\Documents\\LearnPlatform\\Analysis\\Data\\organizations.csv")
-tool_id <- read.csv("C:\\Users\\17046\\OneDrive\\Documents\\LearnPlatform\\Analysis\\Data\\tools.csv")
+# Read in datasets 
+contract <- read.csv("C:\\Users\\Data\\organization_tools_contract.csv")
+line_items <- read.csv("C:\\Users\\Data\\line_items.csv")
+org_id <- read.csv("C:\\Users\\Data\\organizations.csv")
+tool_id <- read.csv("C:\\Users\\\Data\\tools.csv")
 
 # Merge two datasets by unique ID's
 names(contract)
@@ -23,7 +29,7 @@ names(line_items)
 contract$org_tool_id <- contract$id
 line_items$org_tool_id <- line_items$organization_tool_id
 org_id$organization_id <- org_id$id
-tool_id$tool_id <- tool_id$ï..id
+tool_id$tool_id <- tool_id$Ã¯..id
 
 n_contract <- line_items %>%
   merge(contract, by = c("org_tool_id"), all = TRUE)
