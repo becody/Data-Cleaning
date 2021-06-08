@@ -43,6 +43,6 @@ f_contract <- y_contract %>%
 unique_contract <- unique(n_contract[duplicated(n_contract$org_tool_id),])
 
 # Export contract 
-write.csv(f_contract, "C:\\Users\\17046\\OneDrive\\Documents\\LearnPlatform\\Analysis\\Data\\contract073120.csv", 
+write.csv(f_contract, "C:\\Users\\Data\\contract073120.csv", 
           row.names = FALSE)
 
