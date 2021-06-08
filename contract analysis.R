@@ -2,7 +2,6 @@
 # Date: 10/21/2020
 # Goal: perform one time data cleaning and analysis for contract data
 # Author: Brittany Cody
-# Contact: brittany.cody@learnplatform.com
 
 # Install packages
 install.packages("arsenal")
