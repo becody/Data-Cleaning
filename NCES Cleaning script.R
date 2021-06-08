@@ -2,7 +2,6 @@
 # Date: 9/1/2020
 # Goal: import, clean, reformat, and export updated NCES information for schools 
 # Author: Brittany Cody
-# Contact: brittany.cody@learnplatform.com
 
 # # Work on NCES datasets:
 install.packages("arsenal")
